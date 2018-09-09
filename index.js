@@ -48,7 +48,7 @@ else {
 find = movieByName => {
 $.ajax({
     type: "GET",
-    url: "http://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
+    url: "https://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
     data: "{'s': '" + movieByName + "'}",
     dataType: 'json',
      async: true,
@@ -78,7 +78,7 @@ dosearch = movieId => {
 
 $.ajax({
     type: "GET",
-    url: "http://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
+    url: "https://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
     data: "{'i': '" + movieId + "'}",
     dataType: 'json',
      async: true,
@@ -106,7 +106,7 @@ if(data.imdbID != movieId )
 findmovie = year => {
 $.ajax({
     type: "GET",
-    url: "http://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
+    url: "https://www.omdbapi.com/?i=tt3896198&apikey=7d2adea7",
     data: "{'y': '" + year + "'}",
     dataType: 'json',
      async: true,
