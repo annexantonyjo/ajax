@@ -1,4 +1,6 @@
-
+$(document).ready(function(){
+ 
+});
 
 $("form").submit(function(e) {
   e.preventDefault();
@@ -60,7 +62,7 @@ if(data.Title != movieByName )
  }
          else
           {
-          display(data);
+                     display(data);
           }
       },
         error: (data) => { // in case of error response
@@ -135,9 +137,9 @@ if(data.Year != year )
  if (data == null || data== undefined) {
     alert(data.Error);
   } else {
+
            $("#info").show();
-           console.log(data);
-            
+          
             let actors=data.Actors;
             let Awards = data.Awards;
             let BoxOffice = data.BoxOffice;
@@ -163,30 +165,30 @@ if(data.Year != year )
             let imdbRating=data.imdbRating;
            let imdbVotes=data.imdbVotes;
          
-           // $("#title").append(movieName);
-            $("#actor").append(actors);
-            $("#Awards").append(Awards);
-            $("#BoxOffice").append(BoxOffice);
-            $("#Country").append(Country);
-            $("#DVD").append(DVD);
-            $("#Director").append(Director);
-            $("#Genre").append(Genre);
-            $("#Language").append(Language);
-            $("#Metascore").append(Metascore);
-            $("#Plot").append(Plot);
-            $("#Poster").append(Poster);
-            $("#Production").append(Production);
-            $("#Rated").append(Rated);
-            $("#Ratings").append(Ratings);
-            $("#Released").append(Released);
-            $("#Response").append(Response);
-            $("#Runtime").append(Runtime);
-            $("#Website").append(Website);
-            $("#Writer").append(Writer);
-            $("#Year").append(Year);
-            $("#imdbID").append(imdbID);
-             $("#imdbRating").append(imdbRating);
-            $("#imdbVotes").append(imdbVotes);
+            $("#actor").replaceWith(actors);
+            $("#Awards").replaceWith(Awards);
+            $("#BoxOffice").replaceWith(BoxOffice);
+            $("#Country").replaceWith(Country);
+            $("#DVD").replaceWith(DVD);
+            $("#Director").replaceWith(Director);
+            $("#Genre").replaceWith(Genre);
+            $("#Language").replaceWith(Language);
+            $("#Metascore").replaceWith(Metascore);
+            $("#Plot").replaceWith(Plot);
+            $("#Poster").replaceWith(Poster);
+            $("#Production").replaceWith(Production);
+            $("#Rated").replaceWith(Rated);
+            $("#Ratings").replaceWith(Ratings);
+            $("#Released").replaceWith(Released);
+            $("#Response").replaceWith(Response);
+            $("#Runtime").replaceWith(Runtime);
+            $("#Website").replaceWith(Website);
+            $("#Writer").replaceWith(Writer);
+            $("#Year").replaceWith(Year);
+            $("#imdbID").replaceWith(imdbID);
+            $("#imdbRating").replaceWith(imdbRating);
+            $("#imdbVotes").replaceWith(imdbVotes);
+
 
 }
 
